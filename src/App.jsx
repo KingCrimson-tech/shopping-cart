@@ -4,7 +4,9 @@ import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home/Home';
 import Shop from './pages/Shop/Shop';
 import Cart from './pages/Cart/Cart';
+import NotFound from './pages/ErrorHandling/NotFound';
 import './styles/App.css';
+
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -62,6 +64,8 @@ function App() {
                 />
               } 
             />
+            {/* Error handling route */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>
