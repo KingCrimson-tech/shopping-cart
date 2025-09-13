@@ -8,7 +8,7 @@ const Navigation = ({ totalItems }) => {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          ShopCart
+          Shop Cart
         </Link>
         <ul className="nav-menu">
           <li className="nav-item">
